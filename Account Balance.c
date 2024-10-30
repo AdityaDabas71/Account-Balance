@@ -17,60 +17,70 @@ int main(){
 	printf("For depositing money, press 1\nFor withdrawing money, press 2\nFor checking current balance, press 3\n");
 	scanf("%d",&b);
 	
-	switch(a,b){
+	switch(a){
 		
-		case 1: a=1; b=1;
+		case 1: if(b=1){
 		printf("How much money do you want to deposit?\n "); 
 		scanf("%d", &deposit);
 		account1balance=deposit+account1balance;
 		printf("Money dposited. \nNew balance=%d",account1balance);
-		break;
+		}
 		
-		case 2: a=1; b=2;
+		
+		else if(b=2){
+		
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
 		account1balance=account1balance-withdraw;
 		printf("Money withdrawn. \nNew balance=%d",account1balance);
-		break;
+		}
 		
-		case 3: a=1; b=3;
+		else if(b=3){
 		printf("Current balance= %d",account1balance);
+		}
 		break;
 		
-		case 4: a=2; b=1;
+		case 2: if(b=1){
 		printf("How much money do you want to deposit?\n ");
 		scanf("%d", &deposit);
 		account2balance=deposit+account2balance;
 		printf("Money dposited. \nNew balance=%d",account2balance);
-		break;
+		}
 		
-		case 5: a=2; b=2;
+		else if(b=2){
+		
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
 		account2balance=account2balance-withdraw;
 		printf("Money withdrawn. \nNew balance=%d",account2balance);
-		break;
+    	}
 		
-		case 6: a=2; b=3;
+		else if(b=3){	
 		printf("Current balance= %d",account2balance);
+		}
 		break;
 		
-		case 7: a=3; b=1;
+		case 3: if(b=1){
 		printf("How much money do you want to deposit?\n ");
 		scanf("%d", &deposit);
 		account3balance=deposit+account3balance;
 		printf("Money dposited. \nNew balance=%d",account3balance);
-		break;
+		}
 		
-		case 8: a=3; b=2;
+		else if(b=2){
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
 		account3balance=account3balance-withdraw;
 		printf("Money withdrawn. \nNew balance=%d",account3balance);
+		}
+		
+		else if(b=3){
+		printf("Current balance= %d",account3balance);
+		}
 		break;
 		
-		case 9: a=3; b=3; 
-		printf("Current balance= %d",account3balance);
+		default:
+		printf("Invalid choice selection.");
 		break;
 		
 	}
