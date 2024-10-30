@@ -19,7 +19,7 @@ int main(){
 	
 	switch(a){
 		
-		case 1: if(b=1){
+		case 1: if(b==1){
 		printf("How much money do you want to deposit?\n "); 
 		scanf("%d", &deposit);
 		account1balance=deposit+account1balance;
@@ -27,7 +27,7 @@ int main(){
 		}
 		
 		
-		else if(b=2){
+		else if(b==2){
 		
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
@@ -35,19 +35,19 @@ int main(){
 		printf("Money withdrawn. \nNew balance=%d",account1balance);
 		}
 		
-		else if(b=3){
+		else if(b==3){
 		printf("Current balance= %d",account1balance);
 		}
 		break;
 		
-		case 2: if(b=1){
+		case 2: if(b==1){
 		printf("How much money do you want to deposit?\n ");
 		scanf("%d", &deposit);
 		account2balance=deposit+account2balance;
 		printf("Money dposited. \nNew balance=%d",account2balance);
 		}
 		
-		else if(b=2){
+		else if(b==2){
 		
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
@@ -55,26 +55,26 @@ int main(){
 		printf("Money withdrawn. \nNew balance=%d",account2balance);
     		}
 		
-		else if(b=3){	
+		else if(b==3){	
 		printf("Current balance= %d",account2balance);
 		}
 		break;
 		
-		case 3: if(b=1){
+		case 3: if(b==1){
 		printf("How much money do you want to deposit?\n ");
 		scanf("%d", &deposit);
 		account3balance=deposit+account3balance;
 		printf("Money dposited. \nNew balance=%d",account3balance);
 		}
 		
-		else if(b=2){
+		else if(b==2){
 		printf("How much money do you want to withdraw?\n ");
 		scanf("%d", &withdraw);
 		account3balance=account3balance-withdraw;
 		printf("Money withdrawn. \nNew balance=%d",account3balance);
 		}
 		
-		else if(b=3){
+		else if(b==3){
 		printf("Current balance= %d",account3balance);
 		}
 		break;
