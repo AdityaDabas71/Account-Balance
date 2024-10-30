@@ -53,7 +53,7 @@ int main(){
 		scanf("%d", &withdraw);
 		account2balance=account2balance-withdraw;
 		printf("Money withdrawn. \nNew balance=%d",account2balance);
-    	}
+    		}
 		
 		else if(b=3){	
 		printf("Current balance= %d",account2balance);
