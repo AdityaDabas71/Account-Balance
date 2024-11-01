@@ -38,6 +38,10 @@ int main(){
 		else if(b==3){
 		printf("Current balance= %d",account1balance);
 		}
+		
+		else{
+		printf("Invalid choice selection.");
+		}
 		break;
 		
 		case 2: if(b==1){
@@ -58,6 +62,10 @@ int main(){
 		else if(b==3){	
 		printf("Current balance= %d",account2balance);
 		}
+		
+		else{
+		printf("Invalid choice selection.");
+		}
 		break;
 		
 		case 3: if(b==1){
@@ -76,6 +84,10 @@ int main(){
 		
 		else if(b==3){
 		printf("Current balance= %d",account3balance);
+		}
+		
+		else{
+		printf("Invalid choice selection.");
 		}
 		break;
 		
